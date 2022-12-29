@@ -12,8 +12,6 @@ function App() {
             <SuperButton callBack={()=>{}} color={"red"}>Red SuperButton</SuperButton>
             <SuperButton callBack={()=>{}} color={"secondary"}>Red SuperButton</SuperButton>
             <SuperButton callBack={()=>{}} disabled={true}>Red SuperButton</SuperButton>
-
-
         </div>
     );
 }
