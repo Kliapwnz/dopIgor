@@ -6,7 +6,12 @@ type PropsType = {
     children?: React.ReactNode
 }
 
-export const SuperButton: React.FC<PropsType> = ({callBack, children, ...props}) => {
+export const SuperButton: React.FC<PropsType> = (props) => {
+    const {
+        callBack,
+        children,
+        color,
+    } = props
     const onClickHandler = () => {
         callBack()
     }
