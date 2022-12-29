@@ -18,10 +18,29 @@ function App() {
 
     return (
         <div>
-            <SuperTodolist tasks={tasks}/>
+
             <SuperButton callBack={()=>{}} color={"red"}>Red SuperButton</SuperButton>
             <SuperButton callBack={()=>{}} color={"secondary"}>Red SuperButton</SuperButton>
             <SuperButton callBack={()=>{}} disabled={true}>Red SuperButton</SuperButton>
+            <SuperTodolist tasks={tasks}>{"Im Children"}</SuperTodolist>
+            <SuperTodolist tasks={tasks}>
+                <button>X</button>
+                <button>Y</button>
+                <button>Z</button>
+                <input type="Hello"/>
+                <SuperButton callBack={()=>{}} disabled={true}>Red SuperButton</SuperButton>
+            </SuperTodolist>
+            <SuperTodolist tasks={tasks}>
+                <span>Some text...</span>
+                <span>Some text...</span>
+                <span>Some text...</span>
+                <button>X</button>
+                <SuperButton callBack={()=>{}} color={"secondary"}>Red SuperButton</SuperButton>
+                <button>Y</button>
+                <button>Z</button>
+                <input type="Hello"/>
+                <SuperButton callBack={()=>{}} disabled={true}>Red SuperButton</SuperButton>
+            </SuperTodolist>
         </div>
     );
 }

@@ -31,6 +31,7 @@ export const SuperTodolist: React.FC<PropsType> = (props) => {
         <div>
             <h1>Im TODOLIST</h1>
             {currentTasks}
+            {children}
         </div>
     );
 };
