@@ -10,6 +10,8 @@ function App() {
     return (
         <div>
             <SuperButton callBack={()=>{}} color={"xXx"}/>
+
+            <SuperButton callBack={()=>{}} color={"Where"}>{"My name is Button"}</SuperButton>
         </div>
     );
 }
