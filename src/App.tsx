@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import {SuperButton} from "./components/SuperButton";
+import {SuperTodolist} from "./components/SuperTodolist";
 
 
 
@@ -17,6 +18,7 @@ function App() {
 
     return (
         <div>
+            <SuperTodolist tasks={tasks}/>
             <SuperButton callBack={()=>{}} color={"red"}>Red SuperButton</SuperButton>
             <SuperButton callBack={()=>{}} color={"secondary"}>Red SuperButton</SuperButton>
             <SuperButton callBack={()=>{}} disabled={true}>Red SuperButton</SuperButton>
