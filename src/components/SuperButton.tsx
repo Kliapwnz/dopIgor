@@ -17,7 +17,7 @@ export const SuperButton: React.FC<PropsType> = (props) => {
     }
 
     return (
-        <button onClick={onClickHandler}>{"vedro"}</button>
+        <button onClick={onClickHandler}>{children}</button>
     );
 };
 

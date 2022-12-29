@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import {SuperButton} from "./components/SuperButton";
 
 
 
@@ -7,7 +8,9 @@ import './App.css';
 
 function App() {
     return (
-        <div></div>
+        <div>
+            <SuperButton callBack={()=>{}} color={"xXx"}/>
+        </div>
     );
 }
 
